@@ -13,16 +13,14 @@ button {
 	border-radius: 5px;
 }
 
-img { max-width: 100%; 
-
-}
+img { max-width: 100%; }
 
 
 
 
 .home-container{
 	display: grid;
-
+	grid-gap: 20px;
 }
 
 
@@ -31,11 +29,53 @@ img { max-width: 100%;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-areas: 
-	"";
+	"hero hero skate1"
+	"hero hero skate2";
 }
 
 .hero--header{
 	grid-area: hero;
 background: url('images/hero-skateboard.jpeg');
+min-height: 400px;
+background-size: cover;
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+background-position: bottom right;
 }
+
+.hero--header > * {
+background-color: white;
+padding: 5px;
+}
+
+.cta{
+	background-color: #333;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+
+	align-content: center;
+	color: white;
+}
+
+.cta p:first-child{
+	font-size: 26px;
+}
+
+.price{
+	font-size: 50px;
+}
+
+.skate-1{
+grid-area: skate1;
+
+}
+
+.skate-2{
+	grid-area: skate2;
+	
+	}
 
