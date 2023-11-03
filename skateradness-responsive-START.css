@@ -84,3 +84,23 @@ grid-area: skate1;
 	
 	}
 
+	.menu ul{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+		list-style: none;
+		grid-gap: 10px;
+		padding: 0;
+	}
+
+	.menu a{
+		background-color: #333;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px;
+		font-size: 20px;
+		border-radius: 5px;
+	}
+
+	
