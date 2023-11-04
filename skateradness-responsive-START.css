@@ -141,7 +141,7 @@ grid-area: skate1;
 	.learn-more, .learn-more-alt{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 0 40px;
+		grid-gap: 40px;
 		padding: 50px;
 		align-items: center;
 	}
@@ -191,8 +191,65 @@ background: linear-gradient(to right, #333, transparent);
 	}
 
 	.hero--header{
-
+		min-height: 300px;
 	}
 
+	.skate-1, .skate-2{
+text-align: center;
+	}
+
+	.learn-more-alt, .learn-more{
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
 	
+	.learn-more-alt img {
+		grid-column: initial;
+		grid-row: initial;
+	}
+
+	.learn-more-alt, .about__details{
+text-align: center;
+	}
+
+
+.menu{
+	order: -1;
+}
+
+.menu ul{
+	max-height: 0;
+	overflow: hidden;
+	transform: translateX(90);
+	transition: all 0.5s;
+
+}
+
+[aria-controls="menu-list"]{
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+
+
+[aria-expanded="true"] ~ ul {
+	display: grid;
+	max-height: 500px;
+	transform: rotateX(0);
+}
+
+
+
+	[aria-expanded="false"] .close{
+		display: none;
+	}
+
+	[aria-expanded="true"] .close{
+		display: inline-block;
+	}
+
+	[aria-expanded="true"] .open{
+		display: none;
+	}
 }
