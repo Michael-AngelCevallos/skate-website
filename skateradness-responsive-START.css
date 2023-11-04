@@ -21,6 +21,8 @@ img { max-width: 100%; }
 .home-container{
 	display: grid;
 	grid-gap: 20px;
+	max-width: 1200px;
+	margin: auto;
 }
 
 
@@ -144,6 +146,10 @@ grid-area: skate1;
 		align-items: center;
 	}
 
+	.learn-more-alt .about__details{
+		text-align: right;
+	}
+
 	.learn-more-alt img {
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
@@ -174,4 +180,19 @@ grid-area: skate1;
 background: linear-gradient(to right, #333, transparent);
 	}
 
+@media (max-width: 700px){
 
+	.hero{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas: 
+		"hero hero"
+		"skate1 skate2 ";
+	}
+
+	.hero--header{
+
+	}
+
+	
+}
